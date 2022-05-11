@@ -7,6 +7,7 @@ import { AComponent } from './components/a/a.component';
 import { BComponent } from './components/b/b.component';
 import { CComponent } from './components/c/c.component';
 import { MaterialService } from '../core/services/material.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MaterialService } from '../core/services/material.service';
   ],
   imports: [
     CommonModule,
-    MaterialsRoutingModule
+    MaterialsRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [
     MaterialService

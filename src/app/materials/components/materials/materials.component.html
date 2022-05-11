@@ -1,5 +1,20 @@
 <p>materials works!</p>
 
+<!-- Add here a textfield -->
+
+
+<form [formGroup]="form" (ngSubmit)="save($event)">
+    <div class="mb-3">
+        <label><b>Material name: </b></label>
+        <input formControlName="material" placeholder="material name...">
+    </div>
+
+    <div class="mb-3">
+        <button [disabled]="form.invalid" type="button" class="btn btn-primary" type="submit">Guardar y
+            publicar</button>
+    </div>
+</form>
+
 <app-a></app-a>
 
 <app-b></app-b>
