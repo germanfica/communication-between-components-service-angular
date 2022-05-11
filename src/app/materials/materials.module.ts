@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MaterialsRoutingModule } from './materials-routing.module';
+import { MaterialsComponent } from './components/materials/materials.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    MaterialsComponent
+  ],
   imports: [
     CommonModule,
     MaterialsRoutingModule
