@@ -6,6 +6,7 @@ import { MaterialsComponent } from './components/materials/materials.component';
 import { AComponent } from './components/a/a.component';
 import { BComponent } from './components/b/b.component';
 import { CComponent } from './components/c/c.component';
+import { MaterialService } from '../core/services/material.service';
 
 
 @NgModule({
@@ -18,6 +19,9 @@ import { CComponent } from './components/c/c.component';
   imports: [
     CommonModule,
     MaterialsRoutingModule
+  ],
+  providers: [
+    MaterialService
   ]
 })
 export class MaterialsModule { }
