@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MaterialService } from 'src/app/core/services/material.service';
 
 @Component({
   selector: 'app-materials',
@@ -9,7 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class MaterialsComponent implements OnInit {
   form: FormGroup;
 
-  constructor(private formBuilder: FormBuilder,) {
+  constructor(private formBuilder: FormBuilder, private materialService: MaterialService) {
     this.form = {} as FormGroup;
   }
 
@@ -20,6 +21,7 @@ export class MaterialsComponent implements OnInit {
   save(event: Event) {
     event.preventDefault();
     console.log("material name: " + this.form.value['material']);
+    this.materialService.sendMaterial(this.form.value['material']);
   }
 
   private buildForm() {
