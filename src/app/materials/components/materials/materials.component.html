@@ -6,7 +6,7 @@
 <form [formGroup]="form" (ngSubmit)="save($event)">
     <div class="mb-3">
         <label><b>Material name: </b></label>
-        <input formControlName="material" placeholder="material name...">
+        <input formControlName="material" placeholder="material name..." (input)="save($event)">
     </div>
 
     <div class="mb-3">
