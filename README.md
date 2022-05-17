@@ -1,5 +1,7 @@
 # CommunicateBetweenComponents
 
+![ezgif-3-371752bafd](https://user-images.githubusercontent.com/15948693/168855960-2f6adc54-84c3-4612-a3a6-04f7adae0b2a.gif)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
 ## Development server
